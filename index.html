@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>To-do List</title>
+</head>
+<body>
+
+    <div class= "container py-4">
+
+      <div class="modal modal-signin position-static d-block bg-light rounded-4 py-5" >
+        <div class="modal-dialog">
+          <div class="modal-content rounded-4 shadow">      
+            <div class="modal-body p-5 pt-0">             
+
+                <header class="text-center text-dark my-4">
+                  <h1 class="mb-4 text-bg-primary rounded-2">To-do List</h1>
+                  <form class="form-search">
+                    <input class="form-control m-auto" type="text" name="search" placeholder="Buscar to-do" autofocus/>
+                  </form>
+                </header>
+
+                <ul class="todos-container list-group mx-auto text-light">
+                  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-primary">
+                    <span>Fazer exercícios de JS</span>
+                    <i class="far fa-trash-alt delete"></i>
+                  </li>
+            
+                  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-primary">
+                    <span>Planejar site</span>
+                    <i class="far fa-trash-alt delete"></i>
+                  </li>
+            
+                  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-primary">
+                    <span>Pagar contas</span>
+                    <i class="far fa-trash-alt delete"></i>
+                  </li>
+                </ul>
+            
+                <form class="form-add-todo text-center my-4 fw-semibold">
+                  <label class="text-black">Adicionar to-do</label>
+                  <input class="form-control m-auto" type="text" name="add"/>
+                </form>              
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
